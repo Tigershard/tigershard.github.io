@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stripes</title>
+<style>
+  :root { --bg: #fffaf5; --text: #1c1917; --muted: #57534e; --accent: #c2410c; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #1c1917; --text: #f5f5f4; --muted: #a8a29e; --accent: #fb923c; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, sans-serif; }
+  main { max-width: 40rem; margin: 0 auto; padding: 3rem 1rem; }
+  h1 { color: var(--accent); margin-bottom: 0.25rem; }
+  .tag { color: var(--muted); margin-top: 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 3rem; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Stripes</h1>
+  <p class="tag">A personal Android app for organizing a vinyl record collection.</p>
+
+  <p>Stripes keeps a catalogue of the records you own and the ones you want. You can:</p>
+  <ul>
+    <li>add records by hand, by searching Discogs, or by scanning the barcode on the sleeve</li>
+    <li>browse your collection as a list or a grid, sorted and filtered the way you like</li>
+    <li>keep a wishlist for the record shop</li>
+    <li>keep a copy of your collection in a Google Sheet in your own Google Drive</li>
+  </ul>
+
+  <h2>Google Sheets</h2>
+  <p>If you connect a Google account, Stripes creates one spreadsheet, called "Vinyl Organizer", in your Drive and keeps it up to date with your collection. It asks only for Google's <code>drive.file</code> permission. That means it can see and change only the files it created itself, and nothing else in your Drive.</p>
+
+  <p>Stripes is a personal project. It isn't sold, has no ads, and has no server of its own: your records stay on your phone and in your own Google Drive.</p>
+
+  <p><a href="privacy.html">Privacy policy</a></p>
+
+  <footer>Stripes is made by Tigershard. Questions: <a href="https://github.com/Tigershard">github.com/Tigershard</a>.</footer>
+</main>
+</body>
+</html>
